@@ -1,0 +1,27 @@
+# Viking Suite: Volume Drive Service & Host Assessment Toolkit
+
+A high-performance, standalone defensive security suite designed for rapid deployment, host vulnerability auditing, and localized volume management in air-gapped or high-stakes environments. Built with a unified architecture, the toolkit operates efficiently with zero external dependencies to preserve host integrity during structural security investigations.
+
+---
+
+## 🌌 System Architecture & Component Mapping
+
+The system relies on a locked modular baseline comprising core execution layers and local virtual file systems:
+
+*   **Atlas Core (`v_drive_service.py`)**: The central routing kernel managing physical-to-virtual abstraction layers, asynchronous logging channels, and process synchronization loops.
+*   **Frigga UI Layer**: The management workspace presenting system state, device indexing, and deployment status.
+*   **Yggdrasil Pipeline**: The backend log streaming and cross-process telemetry engine mapping real-time analytical event structures.
+*   **LOKI LITE (`vge_engine.py`)**: The dedicated local Windows OS assessment engine designed to rapidly audit host registries, permission structures, and configuration attack vectors.
+
+---
+
+## 📦 Directory Structure & Deliverables
+
+The workspace is organized inside the localized execution root directory:
+
+```text
+/viking_suite/
+├── v_drive_service.py   # System Service Driver & IPC Abstraction Layer
+├── v_installer.py       # Standalone Air-Gapped Deployment Package Installer
+├── vge_engine.py        # LOKI LITE: Windows OS Vulnerability & Audit Engine
+└── winfsp.msi           # Windows File System Proxy (FUSE-backed Volume Dependency)
